@@ -1,5 +1,6 @@
 import {Scoreboard} from "./Scoreboard.jsx";
 import {Card} from "./Card.jsx";
+import {pairsOfCards} from "../constants/cards.js";
 
 export const MemoryGame = () => {
     return (
@@ -9,7 +10,7 @@ export const MemoryGame = () => {
                 <h1>Memory Game</h1>
                 <Scoreboard />
                 <div className="memory-game__cards">
-                    <Card />
+                    {pairsOfCards.map((card) => <Card key={card.id} {...card} />)}
                 </div>
             </div>
         </div>
