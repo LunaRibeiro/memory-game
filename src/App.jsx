@@ -1,10 +1,10 @@
 import './App.css'
+import {MemoryGame} from "./components/MemoryGame.jsx";
 
 function App() {
   return (
       <main className="app">
-        <h1>Memory Game</h1>
-        <p>Projeto iniciado com React + Vite.</p>
+        <MemoryGame />
       </main>
   )
 }
